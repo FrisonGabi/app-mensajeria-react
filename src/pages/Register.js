@@ -70,11 +70,14 @@ const Register = () => {
                         timer:6000
                         
                       })
-                      window.location = "http://localhost:3000/login";
+                    window.location = "http://localhost:3000/login";
                       
                 }
             })
             
+    }
+    const login = () => {
+        window.location = "http://localhost:3000/login"
     }
 
     return (
@@ -100,6 +103,7 @@ const Register = () => {
                        <Input name="state" placeholder="Provincia"/>
                        <Input type="password" name="password" placeholder="Contraseña"/>
                        <Button type="submit">Registrarse</Button>
+                       <Button onClick={login}>Loguearse</Button>
                     </Form>
                 </Formik>
            </Card>
