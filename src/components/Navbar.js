@@ -7,7 +7,8 @@ const Nav = styled.nav`
     display:flex;
     justify-content:flex-end;
     box-shadow: 0 2px 3px rgb(0,0,0,0.3);
-    background-color: #323c66;
+    background-color: #11111138;
+    
 `
 
 const Ul = styled.ul`
@@ -16,7 +17,7 @@ const Ul = styled.ul`
     list-style:none;
 `
 const Li = styled.li`
-    padding:20px;
+    padding:15px;
     margin-right:50px;
 
     &:nth-child(2):hover{
@@ -38,7 +39,7 @@ const Navbar = () => {
     return(
         <Nav>
             <Ul>
-                <Li>{user.toUpperCase()}</Li>
+                <Li>Bienvenido {user.toUpperCase()}!</Li>
                 <Li onClick={logout} >LogOut</Li>
             </Ul>
         </Nav>

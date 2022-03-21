@@ -24,11 +24,13 @@ const InputText = styled.input`
     background-color: transparent;
     outline: none;
     caret-color:white;
-    
+    resize:none;
     &::placeholder{
         color:white;
         opacity:0.8;
     }
+    
+
 `
 
 const ErrorMessage = styled.div`
